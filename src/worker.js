@@ -25,12 +25,10 @@ Module.onRuntimeInitialized = () => {
 }
 
 self.out = function (text) {
-  if (self.debug) {
-    if (text === 'libass: No usable fontconfig configuration file found, using fallback.') {
-      console.debug(text)
-    } else {
-      console.log(text)
-    }
+  if (text === 'libass: No usable fontconfig configuration file found, using fallback.') {
+    console.debug(text)
+  } else {
+    console.log(text)
   }
 }
 self.err = function (text) {
